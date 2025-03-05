@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f2f3f4; /* Light gray background */
+    color: #333; /* Dark text */
+  }
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Adds space between cards */
+    padding: 20px;
+  }
+  .chartl{
+    flex: 3; /* Makes all cards equal width */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: left;
+    min-width: 200px; 
+}
+.chartr{
+    flex: 2; /* Makes all cards equal width */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: left;
+    min-width: 200px; 
+}
+  /* Navbar styles */
+.navbar {
+    background-color: #1e88e5; /* Blue background */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .headn{
+    font-size: 20px;
+    color:white;
+  }
+  
+  /* Profile and logout section */
+  .profile-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Profile Circle */
+  .profile {
+    width: 32px;
+    height: 32px;
+    background-color: #0d47a1; /* Darker blue */
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 14px;
+  }
+  
+  /* Logout Button */
+  .logout-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    text-decoration: underline;
+  }
+/* Container for the cards */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px; /* Adds space between cards */
+    padding: 20px;
+  }
+  
+  /* Individual card styling */
+  .card {
+    flex: 1; /* Makes all cards equal width */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: left;
+    min-width: 200px; /* Prevents cards from becoming too small */
+  }
+  
+  /* Card title */
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Amount styling */
+  .card p {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+/* Main container */
+.transactions-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header: Sorting, Filtering, and Buttons */
+  .transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  /* Filters Section */
+  .filters {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Dropdown styles */
+  .filters select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Export & Import Buttons */
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .export-btn, .import-btn {
+    padding: 10px 15px;
+    border: none;
+    color: #0056b3;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .export-btn {
+    background-color: #e9edf0;
+  }
+  
+  .import-btn {
+    background-color: #e9edf0;
+  }
+  
+  .export-btn:hover {
+    background-color: #0056b3;
+    color:white;
+  }
+  
+  .import-btn:hover {
+    background-color: #0056b3;
+    color:white;
+  }
+  
+  /* Transactions Table */
+  .transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .transactions-table th, .transactions-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .transactions-table th {
+    background: #f8f9fa;
+    font-weight: bold;
+  }
+  
+  /* Income & Expense Colors */
+  .income {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .expense {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .delete-btn:hover {
+    background: darkred;
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .pagination button {
+    border: none;
+    background: white;
+    color: rgb(7, 0, 0);
+    padding: 8px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: black;
+  }
+  
+  .pagination button:hover {
+    background: #ecedee;
+  }
+  
+  .pagination .active {
+    background: white;
+    font-weight: bold;
+  }
+  
